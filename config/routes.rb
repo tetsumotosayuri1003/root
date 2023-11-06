@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   resources :welcomes, only: :index
   resource :login, only: [:new, :create]
+  resources :tasks
   get '/logout', to: 'logouts#show'
 end
